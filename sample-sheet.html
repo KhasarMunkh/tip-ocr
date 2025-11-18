@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Hours Sheet</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: white;
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .sheet {
+            border: 2px solid #000;
+            padding: 30px;
+            background: white;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+
+        .date {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #000;
+        }
+
+        th {
+            background: #f0f0f0;
+            font-weight: bold;
+        }
+
+        .hours {
+            text-align: right;
+        }
+
+        .total-row {
+            font-weight: bold;
+            border-top: 2px solid #000;
+            border-bottom: 2px double #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sheet">
+        <h2>WEEKLY HOURS REPORT</h2>
+        <div class="date">Week ending: November 17, 2025</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>ID</th>
+                    <th class="hours">Hours Worked</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sarah Johnson</td>
+                    <td>1025</td>
+                    <td class="hours">32.5</td>
+                </tr>
+                <tr>
+                    <td>Michael Chen</td>
+                    <td>1034</td>
+                    <td class="hours">28.0</td>
+                </tr>
+                <tr>
+                    <td>Emily Rodriguez</td>
+                    <td>1047</td>
+                    <td class="hours">40.0</td>
+                </tr>
+                <tr>
+                    <td>David Kim</td>
+                    <td>1052</td>
+                    <td class="hours">25.5</td>
+                </tr>
+                <tr>
+                    <td>Jessica Martinez</td>
+                    <td>1068</td>
+                    <td class="hours">35.0</td>
+                </tr>
+                <tr>
+                    <td>Robert Taylor</td>
+                    <td>1073</td>
+                    <td class="hours">30.0</td>
+                </tr>
+                <tr>
+                    <td>Amanda White</td>
+                    <td>1089</td>
+                    <td class="hours">22.5</td>
+                </tr>
+                <tr>
+                    <td>David Kim</td>
+                    <td>1052</td>
+                    <td class="hours">25.5</td>
+                </tr>
+                <tr>
+                    <td>Jessica Martinez</td>
+                    <td>1068</td>
+                    <td class="hours">35.0</td>
+                </tr>
+                <tr>
+                    <td>Dober Taylor</td>
+                    <td>1073</td>
+                    <td class="hours">30.0</td>
+                </tr>
+                <tr>
+                    <td>Amanda James White</td>
+                    <td>1089</td>
+                    <td class="hours">22.5</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="2">Hours:</td>
+                    <td class="hours">213.5</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 30px; font-size: 12px;">
+            <p>Manager Signature: _________________</p>
+            <p>Date: _________________</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px; color: #666; font-family: sans-serif;">
+        <p>Take a screenshot of the sheet above to test the OCR</p>
+        <button onclick="window.print()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+            Print or Save as PDF
+        </button>
+    </div>
+</body>
+
+</html>
